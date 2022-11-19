@@ -52,6 +52,12 @@ const AuthorSchema = new Schema(
       type: Boolean,
       required: true,
     },
+    author_is_active: {
+      type: Boolean,
+    },
+    author_token: {
+      type: String
+    }
   },
   {
     versionKey: false,

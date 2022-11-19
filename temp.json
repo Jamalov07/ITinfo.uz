@@ -1,0 +1,27 @@
+{
+  "level": "info",
+  "message": "POST /author/login 200 41ms",
+  "meta": {
+    "req": {
+      "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNThiODRkNGNlY2NiZmI1NWVmYzk4OCIsImF1dGhvcl9pc19hY3RpdmUiOnRydWUsImlhdCI6MTY2Njk3NTMzOCwiZXhwIjoxNjY2OTc4MzM4fQ.uW8QuL_8cqsYOyQjExmiluS-lkINCgRSImgkZdbd6m4",
+        "connection": "keep-alive",
+        "content-length": "67",
+        "content-type": "application/json",
+        "cookie": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjIwMzdkODNhZDg1Nzk5YTRhMzg5MiIsImlhdCI6MTY2NzQ1NTQ4NSwiZXhwIjoxNjcwMDQ3NDg1fQ.n_7gjcv6nPpfA_keXtxZMiJRdPeo1awjhm6M-CC_wi4; refreshToken1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTc3MWUxZWU5NDdkZGU4YmZhMjFlMyIsImF1dGhvcl9pc19hY3RpdmUiOnRydWUsImlhdCI6MTY2Njk4MDIwNCwiZXhwIjoxNjY5NTcyMjA0fQ.KfW7DQMzlTkQmG1eDSub3IOLEL4oxe568Xf6eWj-00A; refreshToken2=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTdmOGJjZDFkMDJiNWJlNzFlOTIyMSIsInVzZXJfbmFtZSI6Ik9kaWxsb3ZpY2giLCJpYXQiOjE2NjcyMzM4MjAsImV4cCI6MTY2OTgyNTgyMH0.UxkGezhn7jjkqYqcm_KrTCmQ8kvxYU_K-0LC1D68iqM; rrefreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTc3MWUxZWU5NDdkZGU4YmZhMjFlMyIsImF1dGhvcl9pc19hY3RpdmUiOnRydWUsImlhdCI6MTY2Njk3NjUxOSwiZXhwIjoxNjY5NTY4NTE5fQ.A0VApJ_-LHfUgF7XogfuCnwo-cHAJMwGZGmgYK1UMzY",
+        "host": "localhost:3000",
+        "postman-token": "ccf3006d-595e-4e04-9dc6-20e3ee8efa1d",
+        "user-agent": "PostmanRuntime/7.29.2"
+      },
+      "httpVersion": "1.1",
+      "method": "POST",
+      "originalUrl": "/author/login",
+      "query": {},
+      "url": "/author/login"
+    },
+    "res": { "statusCode": 200 },
+    "responseTime": 41
+  }
+}

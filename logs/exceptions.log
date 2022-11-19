@@ -1,0 +1,1235 @@
+2022-11-03T05:14:21.484Z [31merror[39m: unhandledRejection: error is not defined
+ReferenceError: error is not defined
+    at loginAuthor (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/controllers/author.controller.js:210:16)
+    at Layer.handle [as handle_request] (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/express/lib/router/route.js:144:13)
+    at /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/validator.js:12:7
+2022-11-03T05:22:15.889Z [31merror[39m: uncaughtException: routes is not defined
+ReferenceError: routes is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:21:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:22:41.518Z [31merror[39m: uncaughtException: routes is not defined
+ReferenceError: routes is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:21:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:23:34.964Z [31merror[39m: uncaughtException: routes is not defined
+ReferenceError: routes is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:21:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:24:53.085Z [31merror[39m: uncaughtException: Missing catch or finally after try
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/controllers/author.controller.js:240
+};
+^
+
+SyntaxError: Missing catch or finally after try
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/routes/author.routes.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T05:25:09.752Z [31merror[39m: uncaughtException: Missing catch or finally after try
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/controllers/author.controller.js:240
+};
+^
+
+SyntaxError: Missing catch or finally after try
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/routes/author.routes.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T05:25:17.603Z [31merror[39m: uncaughtException: Unexpected token 'catch'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/controllers/author.controller.js:208
+  } catch (error) {
+    ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/routes/author.routes.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T05:25:24.628Z [31merror[39m: unhandledRejection: Cannot destructure property 'email' of 'req.body' as it is undefined.
+TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.
+    at loginAuthor (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/controllers/author.controller.js:181:13)
+    at Layer.handle [as handle_request] (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/express/lib/router/route.js:144:13)
+    at /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/validator.js:12:7
+2022-11-03T05:25:45.004Z [31merror[39m: uncaughtException: Unexpected token 'catch'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/controllers/author.controller.js:208
+  } catch (error) {
+    ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/routes/author.routes.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T05:58:42.387Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:24:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:58:53.387Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:25:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:59:00.486Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:25:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:59:30.501Z error: uncaughtException: Cannot read properties of undefined (reading 'Console')
+TypeError: Cannot read properties of undefined (reading 'Console')
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:25:28)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T05:59:41.513Z error: uncaughtException: Cannot read properties of undefined (reading 'Console')
+TypeError: Cannot read properties of undefined (reading 'Console')
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:26:28)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T06:01:45.073Z error: uncaughtException: winston.format.pre is not a function
+TypeError: winston.format.pre is not a function
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:30:20)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T06:03:24.092Z error: uncaughtException: winston.format.pre is not a function
+TypeError: winston.format.pre is not a function
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:30:20)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T06:08:49.323Z error: uncaughtException: mylogger is not defined
+ReferenceError: mylogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:24:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T06:08:50.644Z error: uncaughtException: mylogger is not defined
+ReferenceError: mylogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:24:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T06:09:43.721Z error: uncaughtException: mylogger is not defined
+ReferenceError: mylogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:09:48.313Z error: uncaughtException: winstlogger is not defined
+ReferenceError: winstlogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:09:50.833Z error: uncaughtException: winstLogger is not defined
+ReferenceError: winstLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:09:54.096Z error: uncaughtException: winstLogger is not defined
+ReferenceError: winstLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:09:55.579Z error: uncaughtException: winstLogger is not defined
+ReferenceError: winstLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:10:05.088Z error: uncaughtException: winstLogger is not defined
+ReferenceError: winstLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:25)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:10:07.890Z error: uncaughtException: winstLogger is not defined
+ReferenceError: winstLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:10:12.781Z error: uncaughtException: winstLogger is not defined
+ReferenceError: winstLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:11:07.511Z error: uncaughtException: Unexpected token ';'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:2
+const {winston = require("winston");
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:11:10.704Z error: uncaughtException: Cannot read properties of undefined (reading 'transports')
+TypeError: Cannot read properties of undefined (reading 'transports')
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:19)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:11:16.382Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:11:18.401Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:11:19.504Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:12:05.087Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:12:09.010Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:12:36.795Z error: uncaughtException: expressWinston is not defined
+ReferenceError: expressWinston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:12:58.485Z error: uncaughtException: Cannot find module 'format'
+Require stack:
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js
+Error: Cannot find module 'format'
+Require stack:
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:955:15)
+    at Module._load (node:internal/modules/cjs/loader:803:27)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3:20)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+2022-11-03T06:13:00.096Z error: uncaughtException: Cannot find module 'format'
+Require stack:
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js
+Error: Cannot find module 'format'
+Require stack:
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:955:15)
+    at Module._load (node:internal/modules/cjs/loader:803:27)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+2022-11-03T06:13:09.323Z error: uncaughtException: Cannot find module 'format'
+Require stack:
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js
+Error: Cannot find module 'format'
+Require stack:
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js
+- /home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:955:15)
+    at Module._load (node:internal/modules/cjs/loader:803:27)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+2022-11-03T06:14:35.774Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:14:42.541Z error: uncaughtException: Unexpected token 'const'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:5
+const winstonLogger = expressWinston.logger({
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:14:46.801Z error: uncaughtException: fromat is not defined
+ReferenceError: fromat is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3:20)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:14:48.810Z error: uncaughtException: f is not defined
+ReferenceError: f is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3:20)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:16:54.877Z error: uncaughtException: Identifier 'module' has already been declared
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:19
+module.exports = {
+^
+
+SyntaxError: Identifier 'module' has already been declared
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:17:11.010Z error: uncaughtException: Missing initializer in const declaration
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:16
+const error
+      ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:17:18.214Z error: uncaughtException: Missing initializer in const declaration
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:16
+const errorLogin
+      ^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:17:20.917Z error: uncaughtException: Missing initializer in const declaration
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:16
+const errorLogin 
+      ^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:17:26.645Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:18:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:17:30.249Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:18:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:17:36.849Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:18:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:17:46.684Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:20:13)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:17:49.291Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:7)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:17:51.474Z error: uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:22:7)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:27)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:18:16.534Z error: uncaughtException: errLogger is not defined
+ReferenceError: errLogger is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:27:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:18:47
+2022-11-03T06:19:18.178Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7
+  format: format.combine(format.json()),
+  ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:19:19.682Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7
+  format: format.combine(format.json()),
+  ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:19:21.955Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:9
+  format: format.combine(format.json()),
+  ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:19:24.502Z error: uncaughtException: Unexpected token ':'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7
+  format: format.combine(format.json()),
+        ^
+
+SyntaxError: Unexpected token ':'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:19:26.043Z error: uncaughtException: Unexpected token ','
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:6
+    transports:,
+               ^
+
+SyntaxError: Unexpected token ','
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:19:28.475Z error: uncaughtException: transports or a winstonInstance are required by express-winston middleware
+Error: transports or a winstonInstance are required by express-winston middleware
+    at ensureValidOptions (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/express-winston/index.js:452:15)
+    at Object.logger (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/express-winston/index.js:258:5)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:4:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+2022-11-03T06:19:47.264Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:7:13)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:20:18.997Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:6:13)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:20:21.074Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:8:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:20:24.948Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:8:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:20:38.896Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:8:11)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:21:04.289Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:21:21.297Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:21:29.697Z error: uncaughtException: config is not defined
+ReferenceError: config is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:21:9)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:24:55.434Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29
+      db: config.get("dbAdr"),
+      ^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:24:59.590Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29
+      db: config.get("dbAdr"),
+      ^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:25:01.177Z error: uncaughtException: Unexpected token ':'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29
+      db: config.get("dbAdr"),
+        ^
+
+SyntaxError: Unexpected token ':'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:25:04.715Z error: uncaughtException: Unexpected token ','
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:28
+        metaKey:,
+                ^
+
+SyntaxError: Unexpected token ','
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:25:06.617Z error: uncaughtException: Unexpected token ','
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:28
+        metaKey:,
+                ^
+
+SyntaxError: Unexpected token ','
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:25:11.490Z error: uncaughtException: tr is not defined
+ReferenceError: tr is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:28:17)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:25:13.186Z error: uncaughtException: tru is not defined
+ReferenceError: tru is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:28:17)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:25:35.740Z error: uncaughtException: Unexpected token ':'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:30
+      db: config.get("dbAdr"),
+        ^
+
+SyntaxError: Unexpected token ':'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:27:05.026Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29
+      db: config.get("dbAdr"),
+      ^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:27:50.860Z error: uncaughtException: Unexpected token '.'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:25
+    format.meta:true,
+          ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:29:42.684Z error: uncaughtException: No transform function found on format. Did you create a format instance?
+const myFormat = format(formatFn);
+const instance = myFormat();
+Error: No transform function found on format. Did you create a format instance?
+const myFormat = format(formatFn);
+const instance = myFormat();
+    at isValidFormat (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/logform/combine.js:37:11)
+    at Array.every (<anonymous>)
+    at cascade (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/logform/combine.js:13:16)
+    at module.exports (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/logform/combine.js:55:33)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+2022-11-03T06:29:44.679Z error: uncaughtException: Cannot read properties of undefined (reading 'transform')
+TypeError: Cannot read properties of undefined (reading 'transform')
+    at isValidFormat (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/logform/combine.js:36:18)
+    at Array.every (<anonymous>)
+    at cascade (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/logform/combine.js:13:16)
+    at module.exports (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/node_modules/logform/combine.js:55:33)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+2022-11-03T06:30:44.037Z error: uncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at new NodeError (node:internal/errors:393:5)
+    at Module.require (node:internal/modules/cjs/loader:1016:11)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:4:1)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+2022-11-03T06:37:38.657Z error: uncaughtException: Unexpected identifier
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:8
+  transports: [
+  ^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:37:49.118Z error: uncaughtException: meta is not defined
+ReferenceError: meta is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:13:7)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:37:50.758Z error: uncaughtException: metaK is not defined
+ReferenceError: metaK is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:13:7)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:37:52.582Z error: uncaughtException: metaKey is not defined
+ReferenceError: metaKey is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:13:7)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:37:54.757Z error: uncaughtException: truen is not defined
+ReferenceError: truen is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:13:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:43:46.603Z error: uncaughtException: t is not defined
+ReferenceError: t is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:12:17)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:43:52.160Z error: uncaughtException: Unexpected token '}'
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:14
+    }),
+    ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:45:21.749Z error: uncaughtException: Missing initializer in destructuring declaration
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3
+const { }
+      ^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:45:25.469Z error: uncaughtException: Missing initializer in destructuring declaration
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3
+const { cobine,}
+      ^^^^^^^^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:45:27.805Z error: uncaughtException: Missing initializer in destructuring declaration
+/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:3
+const { cobine,jso}
+      ^^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+    at Module._compile (node:internal/modules/cjs/loader:1083:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+2022-11-03T06:45:57.538Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:45:59.493Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:46:12.689Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:28:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:47:09.893Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:28:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:47:14.091Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:47:26.041Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-11-03T06:47:36.344Z error: uncaughtException: colorize is not defined
+ReferenceError: colorize is not defined
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/middleware/loggerMiddleware.js:29:10)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Module.load (node:internal/modules/cjs/loader:997:32)
+    at Module._load (node:internal/modules/cjs/loader:838:12)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/home/jamalov/BootcampN1/45-dars_itinfo/itinfo/app.js:20:38)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)

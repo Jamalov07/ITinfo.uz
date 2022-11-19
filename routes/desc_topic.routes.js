@@ -3,10 +3,10 @@ const { getDesc_Topics, getDesc_Topic, addDesc_Topic, deleteDesc_Topic, editDesc
 
 const router = Router();
 
-router.get("/", getDesc_Topics);
-router.get("/:id", getDesc_Topic);
-router.post("/", addDesc_Topic);
-router.put("/:id", editDesc_Topic);
-router.delete("/:id", deleteDesc_Topic);
+// router.get("/", getDesc_Topics);
+// router.get("/:id", getDesc_Topic);
+// router.post("/", addDesc_Topic);
+// router.put("/:id", editDesc_Topic);
+// router.delete("/:id", deleteDesc_Topic);
 
 module.exports = router;

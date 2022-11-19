@@ -6,9 +6,9 @@ const router = Router();
 
 router.get("/", getSynonyms);
 router.get("/:id", getSynonym);
-router.post("/", addSynonym);
-router.put("/:id", editSynonym);
-router.delete("/:id", deleteSynonym);
+// router.post("/", addSynonym);
+// router.put("/:id", editSynonym);
+// router.delete("/:id", deleteSynonym);
 
 
 module.exports = router;

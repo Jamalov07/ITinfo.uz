@@ -11,8 +11,8 @@ const router = Router();
 
 router.get("/", getTags);
 router.get("/:id", getTag);
-router.post("/", addTag);
-router.put("/:id", editTag);
-router.delete("/:id", deleteTag);
+// router.post("/", addTag);
+// router.put("/:id", editTag);
+// router.delete("/:id", deleteTag);
 
 module.exports = router;

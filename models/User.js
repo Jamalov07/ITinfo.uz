@@ -8,20 +8,30 @@ const userSchema = new Schema(
     },
     user_email: {
       type: String,
-        required: true,
-      lowercase:true
+      required: true,
+      lowercase: true,
     },
     user_password: {
       type: String,
       required: true,
     },
     user_info: {
-      type:String,
+      type: String,
       required: true,
     },
     user_photo: {
       type: String,
       required: true,
+    },
+    user_is_active: {
+      type: Boolean,
+      default: false,
+    },
+    user_token: {
+      type: String,
+    },
+    user_activation_link: {
+      type: String,
     },
   },
   {

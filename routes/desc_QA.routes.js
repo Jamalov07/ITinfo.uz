@@ -9,10 +9,10 @@ const {
 
 const router = Router();
 
-router.get("/", getDesc_QAs);
-router.get("/:id", getDesc_QA);
-router.post("/", addDesc_QA);
-router.put("/:id", editDesc_QA);
-router.delete("/:id", deleteDesc_QA);
+// router.get("/", getDesc_QAs);
+// router.get("/:id", getDesc_QA);
+// router.post("/", addDesc_QA);
+// router.put("/:id", editDesc_QA);
+// router.delete("/:id", deleteDesc_QA);
 
 module.exports = router;

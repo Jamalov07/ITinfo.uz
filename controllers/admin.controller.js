@@ -1,79 +1,87 @@
 const Admin = require("../models/Admin");
-const { adminValidation } = require("../validations/admin");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
-const { phoneValidator, emailValidator } = require("../validations/author");
-
-const errorHandler = (res, error) => {
-  res.status(500).send({ message: error });
-};
-
+const config = require("config");
+const jwt = require("../services/JwtService");
+const ApiError = require("../errors/ApiError");
+const mailService = require("../services/MailService");
 const getAdmins = async (req, res) => {
   try {
     const allAdmin = await Admin.find({});
-    res.status(200).send(allAdmin);
+    res.ok(200, allAdmin);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const getAdmin = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid Admin id" });
+      return res.error(400, { friendlyMsg: "invalid Admin id" });
     }
     const admin = await Admin.findOne({ _id: req.params.id });
     if (!admin) {
-      return res.status(400).send({ message: "Admin  not found" });
+      return res.error(400, { friendlyMsg: "Admin  not found" });
     }
-    res.status(200).send(admin);
+    res.ok(200, admin);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const addAdmin = async (req, res) => {
   try {
-    const { error, value } = adminValidation(req.body);
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message });
-    }
     const {
       admin_name,
       admin_email,
       admin_password,
-      admin_is_active,
-      admin_is_creator,
-    } = value;
-
+    } = req.body;
     const adminHashedPassword = bcrypt.hashSync(admin_password, 7);
-
     const newAdmin = await Admin({
       admin_name,
       admin_email,
       admin_password: adminHashedPassword,
-      admin_is_active,
-      admin_is_creator,
     });
     await newAdmin.save();
-    res.status(200).send({ message: "Admin added" });
+    await mailService.sendMessage(
+      admin_email,
+      "Sizning so'rov qabul qilindi. Javobimizni kuting"
+    );
+
+    const payload = {
+      id: newAdmin.id,
+      is_active: newAdmin.admin_is_active,
+    };
+    const tokens = jwt.generateTokens(payload);
+    newAdmin.admin_token = tokens.refreshToken;
+    await newAdmin.save();
+    res.cookie("refreshToken", tokens.refreshToken, {
+      maxAge: config.get("refresh_ms"),
+      httpOnly: true,
+    });
+    res.ok(200, { ...tokens, admin: payload });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const editAdmin = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid Admin id" });
+      return res.error(400, { friendlyMsg: "invalid Admin id" });
     }
     const admin = await Admin.findOne({ _id: req.params.id });
     if (!admin) {
-      return res.status(400).send({ message: "Admin not found" });
-    }
-    const { error, value } = adminValidation(req.body);
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message });
+      return res.error(400, { friendlyMsg: "Admin not found" });
     }
     const {
       admin_name,
@@ -81,7 +89,7 @@ const editAdmin = async (req, res) => {
       admin_password,
       admin_is_active,
       admin_is_creator,
-    } = value;
+    } = req.body;
     const adminHashedPassword = bcrypt.hashSync(admin_password, 7);
     await Admin.updateOne(
       { _id: req.params.id },
@@ -93,52 +101,127 @@ const editAdmin = async (req, res) => {
         admin_is_creator,
       }
     );
-    res.status(200).send({ message: "Admin updated" });
+    res.ok(200, { message: "Admin updated" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const deleteAdmin = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid Admin id" });
+      return res.error(400, { friendlyMsg: "invalid Admin id" });
     }
     const admin = await Admin.findOne({ _id: req.params.id });
     if (!admin) {
-      return res.status(400).send({ message: "Admin not found" });
+      return res.error(400, { friendlyMsg: "Admin not found" });
     }
     await Admin.deleteOne({ _id: req.params.id });
-    res.status(200).send({ message: "Admin deleted" });
+    res.error(400, { friendlyMsg: "Admin deleted" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const loginAdmin = async (req, res) => {
   try {
-    const { admin_email, admin_password } = req.body;
-    const { error } = emailValidator({ admin_email });
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message })
-    }
-    const admin = await Admin.findOne({ admin_email: admin_email });
+    const { email, password } = req.body;
+    const admin = await Admin.findOne({ admin_email: email });
 
     if (!admin) {
-      return res
-        .status(400)
-        .send({ message: "Admin not found brat biz sizni tanimadik" });
+      return res.error(400, {
+        friendlyMsg: "Admin not found brat biz sizni tanimadik",
+      });
     }
-    const validPassword = bcrypt.compareSync(
-      admin_password,
-      admin.admin_password
-    );
+    const validPassword = bcrypt.compareSync(password, admin.admin_password);
     if (!validPassword) {
-      return res.status(400).send({ message: "biz sizni topolmadik" });
+      return res.error(400, { friendlyMsg: "biz sizni topolmadik" });
     }
-    res.status(200).send({ message: `Hush kelibsiz ${admin.admin_name}` });
+
+    const payload = {
+      id: admin.id,
+      admin_is_active: admin.admin_is_active,
+      admin_is_creator: admin.admin_is_creator,
+    };
+    const tokens = jwt.generateTokens(payload);
+    admin.admin_token = tokens.refreshToken;
+    await admin.save();
+    res.cookie("refreshToken", tokens.refreshToken, {
+      maxAge: config.get("refresh_ms"),
+      httpOnly: true,
+    });
+
+    res.ok(200, tokens);
+  } catch (err) {
+    res.error(400, { friendlyMsg: err.message });
+  }
+};
+
+const logOutAdmin = async (req, res) => {
+  try {
+    const { refreshToken } = req.cookies;
+    let admin;
+    if (!refreshToken) {
+      return res.error(400, { friendlyMsg: "token topilmadi" });
+    }
+    admin = await Admin.findOneAndUpdate(
+      { admin_token: refreshToken },
+      { admin_token: "" },
+      { new: true }
+    );
+    if (!admin) {
+      return res.error(400, { friendlyMsg: "admin not found" });
+    }
+    res.clearCookie("refreshToken");
+    res.ok(200, admin);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
+  }
+};
+
+const refreshAdminToken = async (req, res) => {
+  try {
+    const { refreshToken } = req.cookies;
+    if (!refreshToken) {
+      return res.error(400, { friendlyMsg: "token topilmadi" });
+    }
+    const adminDataFromDB = await Admin.findOne({ admin_token: refreshToken });
+    const adminDataFromCookie = await jwt.verifyRefresh(refreshToken);
+    if (!adminDataFromCookie || !adminDataFromDB) {
+      return res.error(400, { friendlyMsg: "admin ro'yhatdan o'tmagan" });
+    }
+    const admin = await Admin.findById(adminDataFromCookie.id);
+    if (!admin) {
+      return res.error(400, { friendlyMsg: "id notogri" });
+    }
+    const payload = {
+      id: admin.id,
+      admin_is_active: admin.admin_is_active,
+      admin_is_creator: admin.admin_is_creator,
+    };
+    const tokens = jwt.generateTokens(payload);
+    admin.admin_token = tokens.refreshToken;
+    await admin.save();
+    res.cookie("refreshToken", tokens.refreshToken, {
+      maxAge: config.get("refresh_ms"),
+      httpOnly: true,
+    });
+
+    res.ok(200, tokens);
+  } catch (error) {
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
@@ -149,4 +232,6 @@ module.exports = {
   editAdmin,
   deleteAdmin,
   loginAdmin,
+  logOutAdmin,
+  refreshAdminToken,
 };

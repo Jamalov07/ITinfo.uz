@@ -1,0 +1,11 @@
+{{#if allDictionary}}
+  <ul>
+    {{#each allDictionary}}
+      <li class="list-group-item">
+        <a href="/dictionary/{{_id}}">{{term}}</a>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <h1>tugadi</h1>
+{{/if}}

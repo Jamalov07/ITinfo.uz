@@ -1,12 +1,7 @@
 const Description = require("../models/Description");
 const Category = require("../models/Category");
-const Dictionary = require("../models/DIctionary");
 const mongoose = require("mongoose");
-const { descriptionValidation } = require("../validations/description");
-
-const errorHandler = (res, error) => {
-  res.status(500).send(error);
-};
+const ApiError = require("../errors/ApiError");
 
 const getDescriptions = async (req, res) => {
   try {
@@ -14,40 +9,42 @@ const getDescriptions = async (req, res) => {
       path: "category_id",
       select: "category_name -_id",
     });
-    res.status(200).send(allDescription);
+    res.ok(200, allDescription);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const getDescription = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid dict id" });
+      return res.error(400, { friendlyMsg: "invalid dict id" });
     }
     const description = await Description.findOne({ _id: req.params.id });
     if (!description) {
-      return res.status(404).send({ message: "Description topilmadi" });
+      return res.status(404).send({ friendlyMsg: "Description topilmadi" });
     }
-    res.status(200).send(description);
+    res.ok(200, description);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const addDescription = async (req, res) => {
   try {
-    const { error, value } = descriptionValidation(req.body);
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message });
-    }
-    const { category_id, description } = value;
+    const { category_id, description } = req.body;
 
     if (!mongoose.isValidObjectId(category_id)) {
-      return res.status(400).send({ message: "invalid category id" });
+      return res.error(400, { friendlyMsg: "invalid category id" });
     }
     if (!Category.findById(category_id)) {
-      return res.status(400).send({ message: "category not found" });
+      return res.error(400, { friendlyMsg: "category not found" });
     }
 
     const newDescription = await Description({
@@ -55,38 +52,31 @@ const addDescription = async (req, res) => {
       description,
     });
     await newDescription.save();
-    res.status(200).send({ message: "Description added" });
+    res.ok(200, { friendlyMsg: "Description added" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const editDescription = async (req, res) => {
   try {
-    const { error, value } = descriptionValidation(req.body);
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message });
-    }
-    const { category_id, description } = value;
+    const { category_id, description } = req.body;
 
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid req id" });
+      return res.error(400, { friendlyMsg: "invalid req id" });
     }
     const description1 = await Description.findOne({ _id: req.params.id });
     if (!description1) {
-      return res.status(400).send({ message: "Description not found" });
+      return res.error(400, { friendlyMsg: "Description not found" });
     }
-
-    // const category_id = req.body.category_id || description1.category_id;
-    console.log(category_id);
-    // const description = req.body.description || description1.description;
-    console.log(description);
-
     if (!mongoose.isValidObjectId(category_id)) {
-      return res.status(400).send({ message: "invalid category id" });
+      return res.error(400, { friendlyMsg: "invalid category id" });
     }
     if (!Category.findById(category_id)) {
-      return res.status(400).send({ message: "category not found" });
+      return res.error(400, { friendlyMsg: "category not found" });
     }
 
     await Description.updateOne(
@@ -96,9 +86,12 @@ const editDescription = async (req, res) => {
         description,
       }
     );
-    res.status(200).send({ message: "description updated" });
+    res.ok(200, { friendlyMsg: "description updated" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
@@ -106,12 +99,15 @@ const deleteDescription = async (req, res) => {
   try {
     const description = await Description.findOne({ _id: req.params.id });
     if (!description) {
-      return res.status(400).send({ message: "Description not found" });
+      return res.error(400, { friendlyMsg: "Description not found" });
     }
     await Description.deleteOne({ _id: req.params.id });
-    res.status(200).send({ message: "Description deleted" });
+    res.ok(200, { friendlyMsg: "Description deleted" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 

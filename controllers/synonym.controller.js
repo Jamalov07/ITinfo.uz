@@ -2,116 +2,107 @@ const Synonym = require("../models/Synonym");
 const mongoose = require("mongoose");
 const Description = require("../models/Description");
 const Dictionary = require("../models/DIctionary");
-const { synonymValidation } = require("../validations/synonym");
-
-const errorHandler = (res, error) => {
-  res.status(500).send(error);
-};
+const ApiError = require("../errors/ApiError");
 
 const getSynonyms = async (req, res) => {
   try {
     const allSynonym = await Synonym.find({});
-    res.status(200).send(allSynonym);
+    res.ok(200, allSynonym);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const getSynonym = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid id" });
+      return res.error(400, { friendlyMsg: "invalid id" });
     }
     const synonym = await Synonym.findOne({ _id: req.params.id });
     if (!synonym) {
-      return res.status(400).send({ message: "Synonym not found" });
+      return res.error(400, { friendlyMsg: "Synonym not found" });
     }
-    res.status(200).send(synonym);
+    res.ok(200, synonym);
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const addSynonym = async (req, res) => {
   try {
-    const { error, value } = synonymValidation(req.body);
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message });
-    }
-    const { desc_id, dict_id } = value;
+    const { desc_id, dict_id } = req.body;
 
     if (!mongoose.isValidObjectId(desc_id)) {
-      return res.status(400).send({ message: "invalid desc id" });
+      return res.error(400, { friendlyMsg: "invalid desc id" });
     }
     const description = await Description.findOne({ _id: desc_id });
     if (!description) {
-      return res.status(400).send({ message: "description not found" });
+      return res.error(400, { friendlyMsg: "description not found" });
     }
     if (!mongoose.isValidObjectId(dict_id)) {
-      return res.status(400).send({ message: "invalid Dictionary id" });
+      return res.error(400, { friendlyMsg: "invalid Dictionary id" });
     }
     const dictionary = await Dictionary.findOne({ _id: dict_id });
     if (!dictionary) {
-      return res.status(400).send({ message: "Dictionary not found" });
+      return res.error(400, { friendlyMsg: "Dictionary not found" });
     }
     const synonym1 = await Synonym.findOne({
       desc_id: desc_id,
       dict_id: dict_id,
     });
     if (synonym1) {
-      res.status(400).send({ message: "synonym already exists" });
+      res.error(400, { friendlyMsg: "synonym already exists" });
     }
     const newSynonym = await Synonym({
       desc_id,
       dict_id,
     });
     await newSynonym.save();
-    res.status(200).send({ message: "Synonym added" });
+    res.ok(200, { friendlyMsg: "Synonym added" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
 const editSynonym = async (req, res) => {
   try {
-    const { error, value } = synonymValidation(req.body);
-    if (error) {
-      return res.status(400).send({ message: error.details[0].message });
-    }
-    const { desc_id, dict_id } = value;
-
+    const { desc_id, dict_id } = req.body;
     if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(400).send({ message: "invalid req id" });
+      return res.error(400, { friendlyMsg: "invalid req id" });
     }
     const synonym = await Synonym.findOne({ _id: req.params.id });
     if (!synonym) {
-      return res.status(400).send({ message: "synonym not found" });
+      return res.error(400, { friendlyMsg: "synonym not found" });
     }
-
-    // const desc_id = req.body.desc_id || synonym.desc_id;
-    // const dict_id = req.body.dict_id || synonym.dict_id;
-
     if (!mongoose.isValidObjectId(desc_id)) {
-      return res.status(400).send({ message: "invalid desc _ id" });
+      return res.error(400, { friendlyMsg: "invalid desc _ id" });
     }
     if (!mongoose.isValidObjectId(dict_id)) {
-      return res.status(400).send({ message: "invalid Dictionary _ id" });
+      return res.error(400, { friendlyMsg: "invalid Dictionary _ id" });
     }
     const description = await Description.findOne({ _id: desc_id });
     if (!description) {
-      return res.status(400).send({ message: "description not found" });
+      return res.error(400, { friendlyMsg: "description not found" });
     }
     const dictionary = await Dictionary.findOne({ _id: dict_id });
     if (!dictionary) {
-      return res.status(400).send({ message: "Dictionary not found" });
+      return res.error(400, { friendlyMsg: "Dictionary not found" });
     }
-
     const synonym1 = await Synonym.findOne({
       desc_id: desc_id,
       dict_id: dict_id,
     });
     if (synonym1) {
-      res.status(400).send({ message: "synonym already exists" });
+      res.error(400, { friendlyMsg: "synonym already exists" });
     }
     console.log("aaa");
     await Synonym.updateOne(
@@ -121,9 +112,12 @@ const editSynonym = async (req, res) => {
         dict_id,
       }
     );
-    res.status(200).send({ message: "synonym updated" });
+    res.ok(200, { friendlyMsg: "synonym updated" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 
@@ -131,12 +125,15 @@ const deleteSynonym = async (req, res) => {
   try {
     const synonym = await Synonym.findOne({ _id: req.params.id });
     if (!synonym) {
-      return res.status(400).send({ message: "Synonym not found" });
+      return res.error(400, { friendlyMsg: "Synonym not found" });
     }
     await Synonym.deleteOne({ _id: req.params.id });
-    res.status(200).send({ message: "Synonym deleted" });
+    res.ok(200, { friendlyMsg: "Synonym deleted" });
   } catch (error) {
-    errorHandler(res, error);
+    ApiError.internal(res, {
+      message: error,
+      friendlyMsg: "Serverda hatolik",
+    });
   }
 };
 

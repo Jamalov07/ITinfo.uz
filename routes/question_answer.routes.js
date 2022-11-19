@@ -6,8 +6,8 @@ const router = Router();
 
 router.get("/", getQuestion_Answers);
 router.get("/:id", getQuestion_Answer);
-router.post("/", addQuestion_Answer);
-router.put("/:id", editQuestion_Answer);
-router.delete("/:id", deleteQuestion_Answer);
+// router.post("/", addQuestion_Answer);
+// router.put("/:id", editQuestion_Answer);
+// router.delete("/:id", deleteQuestion_Answer);
 
 module.exports = router;

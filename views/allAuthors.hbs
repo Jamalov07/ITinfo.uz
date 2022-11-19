@@ -1,0 +1,24 @@
+{{#if allAuthors}}
+  <div class="row">
+
+    {{#each allAuthors}}
+      <div class="col-lg-6 col-md-12">
+        <div class="card mb-3">
+
+          <div class="card" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">{{author_first_name}}
+                {{author_last_name}}</h5>
+              <p class="card-text">{{author_info}}</p>
+              <a href="/author/{{_id}}" class="btn btn-primary">Authorning haqida to'liq</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+
+  </div>
+{{else}}
+  <h1>tugadi</h1>
+{{/if}}

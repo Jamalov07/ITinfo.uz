@@ -9,10 +9,10 @@ const {
 
 const router = Router();
 
-router.get("/", getMedias);
-router.get("/:id", getMedia);
-router.post("/", addMedia);
-router.put("/:id", editMedia);
-router.delete("/:id", deleteMedia);
+// router.get("/", getMedias);
+// router.get("/:id", getMedia);
+// router.post("/", addMedia);
+// router.put("/:id", editMedia);
+// router.delete("/:id", deleteMedia);
 
 module.exports = router;

@@ -17,12 +17,15 @@ const adminSchema = new Schema(
     },
     admin_is_active: {
       type: Boolean,
-      required: true,
+      default: false,
     },
     admin_is_creator: {
       type: Boolean,
-      required: true,
+      default: false
     },
+    admin_token: {
+      type:String,
+    }
   },
   {
     versionKey: false,

@@ -15,9 +15,11 @@ const tagRouter = require("./tag.routes");
 const topicRouter = require("./topic.routes");
 const adminRouter = require("./admin.routes");
 const userRouter = require("./user.routes");
-
+const responseRouter = require("./responses.routes");
 const router = Router();
 
+
+router.use(responseRouter);
 router.use("/category", categoryRouter);
 router.use("/description", descriptionRouter);
 router.use("/dictionary", dictionaryRouter);
@@ -33,4 +35,5 @@ router.use("/tag", tagRouter);
 router.use("/topic", topicRouter);
 router.use("/admin", adminRouter);
 router.use("/user", userRouter);
+
 module.exports = router;
